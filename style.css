@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #1f2a44;
+  color: #fff;
+  padding: 16px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffb703;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: .95rem;
+}
+
+nav a:hover {
+  color: #ffb703;
+}
+
+.banner {
+  text-align: center;
+  padding: 110px 20px;
+  color: #fff;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  max-width: 600px;
+  margin: auto;
+  color: #eee;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ffb703;
+  color: #111;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 65px 8%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #1f2a44;
+}
+
+.categories,
+.products,
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.category,
+.product,
+.review {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.category img,
+.product img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.category h3 {
+  padding: 14px;
+  text-align: center;
+}
+
+.info {
+  padding: 16px;
+}
+
+.offer {
+  background: #e63946;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.price {
+  color: #1f2a44;
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin: 8px 0;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #888;
+  font-size: .9rem;
+  margin-left: 8px;
+}
+
+.product .btn {
+  margin-top: 10px;
+}
+
+.offers {
+  background: #1f2a44;
+  color: #fff;
+}
+
+.offers h2 {
+  color: #ffb703;
+}
+
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.offer-card {
+  background: #2b3a5e;
+  padding: 28px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.offer-card h3 {
+  color: #ffb703;
+  margin-bottom: 8px;
+}
+
+.review {
+  padding: 24px;
+}
+
+.review p {
+  font-style: italic;
+}
+
+.review h4 {
+  margin-top: 12px;
+  color: #1f2a44;
+}
+
+.shop {
+  background: #fff;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+footer {
+  background: #1f2a44;
+  color: #bbb;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 2.1rem;
+  }
+
+  section {
+    padding: 45px 6%;
+  }
+}
